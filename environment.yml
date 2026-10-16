@@ -1,0 +1,12 @@
+name: oop-assignment2
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.26
+  - scipy>=1.11
+  - pandas>=2.0
+  - matplotlib>=3.8
+  - pytest>=7.4
+  - jupyterlab>=4.0
+  - ipykernel>=6.0
