@@ -1,9 +1,9 @@
 # OOP with Python — Assignment 2 (Advent 2026): Five Ugandan Mini-Projects
 
-**Author:** Christine · MSc Data Science & Analytics
+**Author:** Christine Nakyejjwe B40341 · MSc Data Science & Analytics
 
 Five small, tested, object-oriented analysis tools, each answering a planning question in a Ugandan context.
-Reusable logic lives in `src/`; each notebook imports it, runs the analysis and ends with
+Reusable logic lives in `src/`; each notebook imports it, runs the analysis, and ends with
 **Findings & Limitations**.
 
 | # | Notebook | Question | Main classes |
@@ -66,20 +66,20 @@ to type demand values yourself.
 ## Summary of findings
 
 1. **Population.** The exponential (CAGR) model beat linear trend on the 2022–24 hold-out in all five districts;
-   the Fibonacci-ratio model (implied +62 %/yr) was off by ~200 %. Wakiso grows fastest (6.5 %/yr) and overtakes
+   the Fibonacci-ratio model (implied +62%/yr) was off by ~200%. Wakiso grows fastest (6.5%/yr) and overtakes
    Kampala by 2029. About **4,600 additional classrooms** are needed by 2029, ~2,100 of them in Wakiso.
 2. **Micro-grid.** The system is well-conditioned (det = −5, cond ≈ 5.8); Monte Carlo error amplification stayed
-   below cond(A). The battery is the volatile, costly residual source (CV 0.37; 33 % of energy but 59 % of cost).
+   below cond(A). The battery is the volatile, costly residual source (CV 0.37; 33% of energy but 59% of cost).
    One of 30 days was infeasible and was repaired with NNLS. Vectorised solving was ~14× faster than a loop.
 3. **Fishery.** A variance threshold of 50,000 is meaningless (variance is in UGX², ~10¹⁸); CV is unit-free.
    Long-run yield peaks at h = 0.20 = r/2 (MSY = 1,000 t/week); h = 0.10 and 0.30 give the same yield but very
-   different stock safety margins. 5 % VaR at h = 0.10 ≈ 17 % of mean annual revenue. A closed season only pays off
-   when the stock is over-fished (h = 0.30: +7 % revenue over 5 years).
+   different stock safety margins. 5% VaR at h = 0.10 ≈ 17% of mean annual revenue. A closed season only pays off
+   when the stock is overfished (h = 0.30: +7% revenue over 5 years).
 4. **Rainfall.** Cosine similarity rates all pairs "similar" (0.75–0.89) because it ignores magnitude; Pearson shows
    almost no shared timing. Mbarara is bimodal; Gulu has one long season with a June dip; the illustrative Kampala
    data has too weak a second season to be detected (real Kampala is bimodal). Advisory note for Gulu included.
 5. **Taxis.** Ntinda's UGX 2,000 fare is UGX 200 below equilibrium (UGX 2,200), so there is excess demand at peak
-   times. Tuned SES (α = 1, i.e. naïve) beat the 3-day moving average by 22–38 %. One vehicle per route suffices on
+   times. Tuned SES (α = 1, i.e. naïve) beat the 3-day moving average by 22–38%. One vehicle per route suffices on
    day 11. On 60 days of weekly-patterned data, seasonal naïve beat the moving average almost 3×.
 
 Extensions attempted: P1 (bootstrap PIs + Fibonacci critique), P2 (hybrid 3×3 grid + Monte Carlo sensitivity),
@@ -88,10 +88,11 @@ attempted. All data are illustrative/synthetic as provided in the brief.
 
 ## AI use declaration
 
-I used Claude (Anthropic) as an AI coding assistant for this assignment. It helped draft the module structure,
-class implementations, tests, notebook code and first drafts of the written explanations. I reviewed the
-outputs, checked results against hand calculations (included in the notebooks and tests), and I am responsible
-for the code and interpretation submitted. *(Edit this paragraph so it accurately describes how you used it.)*
+I used Claude (Anthropic) as an AI coding assistant. It generated the project structure, the
+class implementations in src/, the unit tests, the notebook code, and first drafts of the written
+explanations and Findings sections. I reviewed the work, ran the notebooks and tests on my own
+machine, and checked key results against the hand calculations included in the notebooks and
+tests. I am responsible for the submission and can explain the code and results.
 
 ## References
 
